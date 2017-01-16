@@ -1,0 +1,25 @@
+{
+  "name": "r2es_client",
+  "version": "0.0.0",
+  "description": "road2esports client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unscript/r2es_client.git"
+  },
+  "keywords": [
+    "road2esports"
+  ],
+  "author": "unscript",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unscript/r2es_client/issues"
+  },
+  "homepage": "https://github.com/unscript/r2es_client#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

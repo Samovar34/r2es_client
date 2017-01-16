@@ -1,0 +1,21 @@
+{
+  "name": "r2es_client",
+  "description": "road2esports client",
+  "main": "index.js",
+  "authors": [
+    "unscript"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "road2esports"
+  ],
+  "homepage": "https://github.com/unscript/r2es_client",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
