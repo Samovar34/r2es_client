@@ -37,4 +37,10 @@ jspm_packages
 .node_repl_history
 
 # bower
-bower_components
+bower_components/
+
+# build
+build/
+
+#tmp folder
+tmp/
