@@ -6,6 +6,9 @@
 body {
     background-color: $page-bg-color;
     color: $page-font-color;
+    background-image: url(../img/background_img.png);
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 h1, h2 {
@@ -22,7 +25,7 @@ h2 {
     left: 0;
     width: 100%;
     text-align: right;
-    padding-right: 15px;
+    padding: 10px;
 }
 
 span {
