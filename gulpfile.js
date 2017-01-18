@@ -1,6 +1,7 @@
 const gulp = require("gulp"),
       scss = require("gulp-sass"),
       del  = require("del"),
+      include = require("gulp-file-include"),
       browserSync = require("browser-sync").create();
 
 let path = {
@@ -54,7 +55,10 @@ gulp.task("build:style", () => {
 // build js
 gulp.task("build:js", () => {
     gulp.src(path.src.js)
-        // file include
+        // включить файлы в главный файл
+        .pipe(include({
+            prefix: "@@"
+        }))
         // uglify
         .pipe(gulp.dest(path.build.js));
 });
