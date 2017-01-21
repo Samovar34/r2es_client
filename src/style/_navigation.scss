@@ -1,0 +1,20 @@
+// BASIC WITHOUT JS
+.layout-nav {
+    background-color: $nav-bg-color;
+    box-shadow: 0 2px 3px $nav-shadow-color;
+    height: 50px;
+    line-height: 48px;
+}
+
+.layout-nav:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: -3px 0 0 0;
+    box-shadow: 0 0 5px $nav-top-shadow-color;
+}
+
+// WITH JS
+
+// MEDIA QUERIES

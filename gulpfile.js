@@ -14,7 +14,7 @@ let path = {
     },
 
     watch: {
-        html: "src/*.html",
+        html: "src/**/*.html",
         style: "src/style/**/*.scss",
         js: "src/js/**/*.js",
         img: "src/img/**/*.*",
@@ -39,6 +39,10 @@ let path = {
 // build html
 gulp.task("build:html", () => {
     gulp.src(path.src.html)
+        // включить файлы в главный файл
+        .pipe(include({
+            prefix: "@@"
+        }))
         .pipe(gulp.dest(path.build.html));
 });
 

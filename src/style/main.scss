@@ -2,11 +2,12 @@
 @import "../../bower_components/bootstrap/scss/bootstrap-grid";
 
 @import "variables";
+@import "navigation";
 
 body {
     background-color: $page-bg-color;
     color: $page-font-color;
-    background-image: url(../img/background_img.png);
+    //background-image: url(../img/background_img.png);
     background-position: center top;
     background-repeat: no-repeat;
 }
