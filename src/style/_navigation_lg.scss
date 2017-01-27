@@ -1,0 +1,35 @@
+// NAVIGATION
+
+// LG SCREEN
+.nav-layout {
+    box-shadow: 0 2px 3px $nav-shadow-color;
+    
+    .nav-container {
+        width: 960px;
+        margin: 0 auto;
+        padding: 0 0.9375em;
+    }
+
+    .top {
+        box-shadow: none;
+        display: none;
+    }
+
+    .toggle {
+        box-shadow: none;
+        position: static;
+        display: block !important;
+    }
+
+    .item {
+        display: inline;
+    }
+
+    .menu-link.m-list {
+        display: inline-block;
+        padding: 0 0.9375em;
+        border: none;
+        line-height: 3.75em;
+    }
+}
+

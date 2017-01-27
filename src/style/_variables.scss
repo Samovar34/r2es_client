@@ -1,10 +1,16 @@
-$page-bg-color: #91acc1;
+$page-bg-color: #eceff1;
 
 $page-font-color: #fdfffe;
 
 // navigation
 
-$nav-bg-color: #3d464d;
-$nav-font-color: $page-font-color;
-$nav-shadow-color: #111;
-$nav-top-shadow-color: #aec0ce;
+$nav-bg-color: #37474f;
+$nav-font-color: #b6bdc1;
+$nav-shadow-color: #757575;
+
+$nav-item-border-top-color: #546e7a;
+$nav-item-border-bottom-color: #263238;
+$nav-item-bg-hover-color: #455A64;
+
+$nav-toggle-shadow-color: #757575;
+

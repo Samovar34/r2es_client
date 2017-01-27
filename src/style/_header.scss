@@ -1,0 +1,16 @@
+.header {
+    font-size: 1em;
+    max-width: 1140px;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    @include make-container();
+
+    h1 {
+        color: #212121;
+        text-align: center;
+
+        span {
+            color: #F44336;
+        }
+    }
+}
