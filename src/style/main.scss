@@ -5,6 +5,10 @@
 @import "navigation";
 @import "header";
 @import "content";
+@import "content-wrapper";
+@import "first";
+@import "second";
+
 
 body {
     background-color: $page-bg-color;

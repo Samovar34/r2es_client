@@ -1,0 +1,19 @@
+// SECONDARY CONTENT BLOCK
+
+.second {
+    @include make-col-ready();
+
+    @include make-col(12);
+
+    margin-top: 10px;
+
+    @media (min-width: 992px) {
+        @include make-col(5);
+        margin-top: 0;
+    }
+
+    @media (min-width: 1200px) {
+        @include make-col(4);
+    }
+}
+

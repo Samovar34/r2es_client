@@ -1,0 +1,16 @@
+// MAIN CONTENT BLOCK
+
+.first {
+    @include make-col-ready();
+
+    @include make-col(12);
+
+    @media (min-width: 992px) {
+        @include make-col(7);
+    }
+
+    @media (min-width: 1200px) {
+        @include make-col(8);
+    }
+}
+
