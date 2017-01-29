@@ -3,18 +3,24 @@
 .wrapper {
     background-color: #fff;
     box-shadow: 0 1px 3px #757575;
+    font-size: 1em;
+
+    &.m-next {
+        margin-top: 0.625em;
+    }
 }
+
 
 @media (min-width: 992px) {
     .wrapper {
 
         // MODOFICATORS
         &.m-first {
-            margin-right: -10px;
+            margin-right: -0.625em;
         }
 
         &.m-last {
-            margin-left: -10px;
+            margin-left: -0.625em;
         }
     }
 }

@@ -1,0 +1,7 @@
+.footer {
+    @include make-col-ready();
+
+    color: #78909C;
+    margin-top: 20px;
+    text-align: center;
+}

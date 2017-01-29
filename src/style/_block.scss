@@ -1,0 +1,63 @@
+.block {
+    .b-header {
+        height: 10em;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+
+        .bh-header {
+            color: #fff;
+            padding: 5px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            margin: 0;
+        }
+
+        .bh-link {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            bottom: 0;
+
+        }
+    }
+
+    .b-body {
+        position: relative;
+        padding: 1em;
+
+        .b-last {
+            margin-bottom: 0;
+        }
+    }
+
+    .b-date {
+        font-size: .8em;
+        font-style: italic;
+        color:#78909C;
+    }
+
+    .b-link {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        padding: 0 1em 1em 1em;
+        color:#78909C;
+    }
+
+    .b-link:active, .b-link:focus, .b-link:visited {
+        color:#78909C;
+        text-decoration: none;
+    }
+
+    .b-link:hover {
+       
+    }
+
+    .b-footer {
+
+    }
+}
