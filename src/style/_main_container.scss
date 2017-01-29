@@ -1,16 +1,16 @@
 // MAIN CONTENT BLOCK
 
-.first {
+.main_container {
     @include make-col-ready();
 
     @include make-col(12);
 
     @media (min-width: 992px) {
         @include make-col(7);
+        margin-right: -0.625em;
     }
 
     @media (min-width: 1200px) {
         @include make-col(8);
     }
 }
-

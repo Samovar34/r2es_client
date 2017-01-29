@@ -5,17 +5,13 @@
 @import "navigation";
 @import "header";
 @import "content";
-@import "content-wrapper";
-@import "first";
-@import "second";
+@import "main_container";
+@import "sidebar";
 @import "footer";
 @import "block";
 
 
 body {
     background-color: $page-bg-color;
-    color: $page-font-color;
-    //background-image: url(../img/background_img.png);
-    background-position: center top;
-    background-repeat: no-repeat;
+    color: $main-font-color;
 }

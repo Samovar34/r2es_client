@@ -1,5 +1,5 @@
 .content {
-    color: #212121;
+    color: $cn-font-color;
     font-size: 1em;
     max-width: 1140px;
     @include make-container();

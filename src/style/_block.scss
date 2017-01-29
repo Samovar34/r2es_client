@@ -1,4 +1,9 @@
 .block {
+    background-color: #fff;
+    box-shadow: 0 1px 3px #757575;
+    font-size: 1em;
+    margin-bottom: 0.625em;
+
     .b-header {
         height: 10em;
         background-position: center center;
@@ -6,7 +11,7 @@
         position: relative;
 
         .bh-header {
-            color: #fff;
+            color: $b-header-font-color;
             padding: 5px;
             position: absolute;
             left: 0;
@@ -29,7 +34,7 @@
         position: relative;
         padding: 1em;
 
-        .b-last {
+        p.b-last {
             margin-bottom: 0;
         }
     }
@@ -37,27 +42,26 @@
     .b-date {
         font-size: .8em;
         font-style: italic;
-        color:#78909C;
-    }
-
-    .b-link {
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-        padding: 0 1em 1em 1em;
-        color:#78909C;
-    }
-
-    .b-link:active, .b-link:focus, .b-link:visited {
-        color:#78909C;
-        text-decoration: none;
-    }
-
-    .b-link:hover {
-       
+        color:$b-date-font-color;
     }
 
     .b-footer {
+        .b-link {
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            padding: 0 1em 1em 1em;
+            color: $b-date-font-color;
+        }
 
+        .b-link:active, .b-link:focus, .b-link:visited {
+            color:#78909C;
+            text-decoration: none;
+        }
+
+        
+        .b-link:hover {
+        
+        }
     }
 }

@@ -1,3 +1,6 @@
+// MAIN HEADER
+// Место для логотипа и объявлений
+
 .header {
     font-size: 1em;
     max-width: 1140px;
@@ -6,11 +9,11 @@
     @include make-container();
 
     h1 {
-        color: #212121;
+        color: $h-font-color;
         text-align: center;
 
         span {
-            color: #F44336;
+            color: $h-alt-font-color;
         }
     }
 }

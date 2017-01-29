@@ -1,9 +1,26 @@
 $page-bg-color: #eceff1;
 
-$page-font-color: #fdfffe;
+$main-font-color: #212121;
+$info-font-color: #78909C;
+
+// block
+$b-date-font-color: $info-font-color;
+
+// block header
+$b-header-font-color: #fff;
+
+// block body
+
+// block footer
+
+// content
+$cn-font-color: $main-font-color;
+
+//header
+$h-font-color: $main-font-color;
+$h-alt-font-color: #F44336;
 
 // navigation
-
 $nav-bg-color: #37474f;
 $nav-font-color: #b6bdc1;
 $nav-shadow-color: #212121;
