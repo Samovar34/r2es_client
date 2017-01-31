@@ -5,6 +5,12 @@
 
     @include make-col(12);
 
+    @media (min-width: 762px) {
+        @include make-col(7);
+        margin-top: 0;
+        margin-right: -0.625em;
+    }
+
     @media (min-width: 992px) {
         @include make-col(7);
         margin-right: -0.625em;

@@ -7,37 +7,14 @@
 
     .b-header {
         height: 10em;
-        background-position: center center;
+        background-position: top center;
         background-size: cover;
         position: relative;
-
-        .bh-header {
-            color: $b-header-font-color;
-            padding: 5px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            margin: 0;
-        }
-
-        .bh-link {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            bottom: 0;
-            
-            &:hover {
-                background-color: rgba(255, 255, 255, .1);
-            }
-
-        }
     }
 
     .b-body {
         position: relative;
-        padding: 1em;
+        padding: 0.625em;
 
         p.b-last {
             margin-bottom: 0;

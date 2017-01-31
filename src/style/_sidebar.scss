@@ -7,6 +7,12 @@
 
     margin-top: 10px;
 
+    @media (min-width: 762px) {
+        @include make-col(5);
+        margin-top: 0;
+        margin-left: -0.625em;
+    }
+
     @media (min-width: 992px) {
         @include make-col(5);
         margin-top: 0;

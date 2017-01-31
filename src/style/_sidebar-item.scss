@@ -1,0 +1,27 @@
+.sidebar-item {
+    background-color: #fff;
+    box-shadow: 0 1px 3px #757575;
+    font-size: 1em;
+    margin-bottom: 0.625em;
+    position: relative;
+    padding: 0.625em;
+
+    // MODs
+
+    &.sidebar-item--last {
+        margin-bottom: 0;
+    }
+}
+
+.sidebar-item__header {
+    border-bottom: 1px solid #78909C;
+    margin-bottom: 0.5em;
+}
+
+.sidebar-item__body {
+    
+}
+
+.sidebar-item__footer {
+    
+}

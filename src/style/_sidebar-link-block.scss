@@ -1,0 +1,42 @@
+.sidebar-link-block {
+    font-size: 1em;
+    position: relative;
+    height: 7em;
+    background-position: center center;
+    margin-bottom: 0.625em;
+    border: 1px solid #78909C;
+
+    // MODs
+
+    &.sidebar-link-block--last {
+        margin-bottom: 0;
+    }
+}
+
+.sidebar-link-block__link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, .1);
+    }
+}
+
+.sidebar-link-block__header {
+    color: $b-header-font-color;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+@media (min-width: 992px) {
+    .sidebar-link-block {
+        height: 7em;
+    }
+}

@@ -10,6 +10,10 @@
 @import "footer";
 @import "block";
 
+@import "sidebar";
+@import "sidebar-item";
+@import "sidebar-link-block";
+
 
 body {
     background-color: $page-bg-color;
