@@ -4,10 +4,9 @@
     height: 7em;
     background-position: center center;
     margin-bottom: 0.625em;
-    border: 1px solid #78909C;
+    border: 1px solid $slb_border-color;
 
     // MODs
-
     &.sidebar-link-block--last {
         margin-bottom: 0;
     }
@@ -22,21 +21,20 @@
     bottom: 0;
 
     &:hover {
-        background-color: rgba(255, 255, 255, .1);
+        background-color: $slb__link_background-color-hover;
+    }
+
+    span {
+        position: absolute;
+        top: -999em;
     }
 }
 
 .sidebar-link-block__header {
     color: $b-header-font-color;
-    padding: 5px;
+    padding: 0.3125em;
     position: absolute;
     left: 0;
     bottom: 0;
     margin: 0;
-}
-
-@media (min-width: 992px) {
-    .sidebar-link-block {
-        height: 7em;
-    }
 }

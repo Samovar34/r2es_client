@@ -1,25 +1,44 @@
 .sidebar-item {
-    background-color: #fff;
-    box-shadow: 0 1px 3px #757575;
+    background-color: $sitem_background-color;
+    box-shadow: $sitem_box-shadow;
     font-size: 1em;
     margin-bottom: 0.625em;
     position: relative;
-    padding: 0.625em;
+    
 
     // MODs
-
     &.sidebar-item--last {
         margin-bottom: 0;
     }
 }
 
 .sidebar-item__header {
-    border-bottom: 1px solid #78909C;
+    border-bottom: 1px solid $sitem__header_border-bottom-color;
     margin-bottom: 0.5em;
+
+    h3 {
+        margin: 0;
+        padding: 0.3125em 0.625em;
+    }
 }
 
 .sidebar-item__body {
-    
+    padding: 0 0.625em 0.625em;
+
+    // MODs
+
+    // Если тело блока применяется без header
+    &.sidebar-item__body--alone {
+        padding-top: 0.625em;
+    }
+}
+
+.sidebar-item__paragraph {
+
+    //MODs
+    &.sidebar-item__paragraph--last {
+        margin-bottom: 0;
+    }
 }
 
 .sidebar-item__footer {

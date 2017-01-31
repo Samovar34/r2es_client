@@ -4,46 +4,52 @@
     font-size: 1em;
     margin-bottom: 0.625em;
     position: relative;
+}
 
-    .b-header {
-        height: 10em;
-        background-position: top center;
-        background-size: cover;
-        position: relative;
+.block__header {
+    height: 10em;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+
+.block__body {
+    position: relative;
+    padding: 0.625em 0.9375em;
+}
+
+.block__paragraph {
+
+    // MODs
+    &.block__paragraph--last {
+        margin-bottom: 0;
     }
+}
 
-    .b-body {
-        position: relative;
-        padding: 0.625em;
+.block__date {
+    font-size: .8em;
+    font-style: italic;
+    color:$b-date-font-color;
+}
 
-        p.b-last {
-            margin-bottom: 0;
-        }
+.block__footer {
+
+}
+
+.block__footer-link {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    color: $b-date-font-color;
+
+    &:active, &:focus, &:visited {
+        color:#78909C;
+        text-decoration: none;
     }
-
-    .b-date {
-        font-size: .8em;
-        font-style: italic;
-        color:$b-date-font-color;
-    }
-
-    .b-footer {
-        .b-link {
-            display: inline-block;
-            text-align: center;
-            width: 100%;
-            padding: 0 1em 1em 1em;
-            color: $b-date-font-color;
-        }
-
-        .b-link:active, .b-link:focus, .b-link:visited {
-            color:#78909C;
-            text-decoration: none;
-        }
 
         
-        .b-link:hover {
-            
-        }
+    &:hover {
+        
     }
 }
