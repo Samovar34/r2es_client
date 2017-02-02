@@ -4,18 +4,20 @@
     font-size: 1em;
     margin-bottom: 0.625em;
     position: relative;
-}
 
-.block__header {
-    height: 10em;
-    background-position: top center;
-    background-size: cover;
-    position: relative;
-}
+    // ELEMENTS
 
-.block__body {
-    position: relative;
-    padding: 0.625em 0.9375em;
+    &__body {
+        position: relative;
+        padding: 0.625em 0.9375em;
+    }
+
+    &__header {
+        height: 10em;
+        background-position: top center;
+        background-size: cover;
+        position: relative;
+    }
 }
 
 .block__paragraph {

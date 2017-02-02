@@ -1,0 +1,34 @@
+.page-layout {
+    color: $cn-font-color;
+}
+
+.page-col-main {
+    @include make-col-ready();
+    @include make-col(12);
+}
+
+.page-col-aside { 
+    @include make-col-ready();
+    @include make-col(12);
+}
+
+@media (min-width: 762px) {
+    .page-col-main {
+        @include make-col(7);
+    }
+
+    .page-col-aside {
+        @include make-col(5);
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .page-col-main {
+        @include make-col(8);
+    }
+
+    .page-col-aside {
+        @include make-col(4);
+    }
+}

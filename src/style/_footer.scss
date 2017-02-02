@@ -1,14 +1,9 @@
 .footer {
-    @include make-row();
-
     color: #78909C;
     margin-bottom: 20px;
 
 }
 
 .footer__body {
-    @include make-col-ready();
-
-    @include make-col(12);
     text-align: center;
 }

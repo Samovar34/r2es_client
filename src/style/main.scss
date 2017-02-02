@@ -1,11 +1,20 @@
+// отменить импорт предустановленных классов grid
+$enable-grid-classes: false;
+
 @import "../../bower_components/bootstrap/scss/bootstrap-reboot";
 @import "../../bower_components/bootstrap/scss/bootstrap-grid";
 
+// variables
 @import "variables";
+
+// layouts
+@import "./layouts/common";
+@import "./layouts/page";
+@import "./layouts/header";
+
+// blocks
 @import "navigation";
 @import "header";
-@import "content";
-@import "main_container";
 @import "sidebar";
 @import "footer";
 @import "block";

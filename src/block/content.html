@@ -1,7 +1,16 @@
-<div class="content">
-    <div class="page">
-        @@include("./first.html")
-        @@include("./second.html")
+<div class="page-layout layout-base">
+    <div class="layout-row">
+        <div class="page-col-main">
+            @@include("./first.html")
+        </div>
+        <div class="page-col-aside">
+            @@include("./second.html")
+        </div>
     </div>
-    @@include("./footer.html")
+    <div class="layout-row">
+        <div class="layout-col">
+            @@include("./footer.html")
+        </div>
+    </div>
+    
 </div>
