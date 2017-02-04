@@ -1,38 +1,35 @@
 // NAVIGATION
 
 // BASIC
-.nav-layout {
-    background-color: $nav-bg-color;
+.nav {
     position: relative;
-    font-size: 1em;
 
-    .nav-container {
-        position: relative;
-    }
-
-    .top {
+    // MAIN TOP BLOCK
+    &__top {
         box-shadow: 0 2px 3px $nav-shadow-color;
         line-height: 3em;
         max-height: 3em;
-        padding: 0px 0.9375em;
+        padding: 0 0.9375em;
         position: relative;
         overflow: hidden;
         z-index: 11;    
     }
 
-    .nav-toggler {
+    // BUTTON
+    &__toggler {
         background-color: transparent;
         display: inline-block;
         border: none;
         padding: 0 0.9375em;
         margin-left: -0.9375em;
+
+        &:hover {
+            background-color: $nav-item-bg-hover-color;
+        }
     }
 
-    .nav-toggler:hover {
-        background-color: $nav-item-bg-hover-color;
-    }
-
-    .nav-links {
+    // BLOCK WITH LINKS
+    &__links {
         position: absolute;
         right: 0;
         top: 0;
@@ -41,12 +38,8 @@
         z-index: 12;
     }
 
-    .nav-links>.menu-link {
-        display: inline-block;
-        padding: 0 0.9375em;
-    }
-
-    .toggle {
+    // BLOCK THAK CAN BE TOGGLE
+    &__toggle {
         background-color: $nav-bg-color;
         box-shadow: 0 2px 3px $nav-toggle-shadow-color;
         position: absolute;
@@ -57,11 +50,41 @@
         z-index: 10;
     }
 
-    .menu-link {
+    // SIMPLE NAVIGATION LINKS
+    &__link {
         color: $nav-font-color;
+
+        &:active, &:hover, &:visited, &:focus {
+            color: $nav-font-color;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background-color: $nav-item-bg-hover-color;
+        }
+
+        // MODs
+        &--li {
+            display: block;
+            line-height: 2.875em;
+            padding-left: 0.9375em;
+            border-top: 1px solid $nav-item-border-top-color;
+            border-bottom: 1px solid $nav-item-border-bottom-color;
+        }
+
+        &--inline {
+            display: inline-block;
+            padding: 0 0.9375em;
+        }
+
+        &--last {
+            line-height: 3em;
+            border-bottom: none;
+        }
     }
 
-    .item-list {
+    // NAVIGATION LIST
+    &__list {
         font-size: 1em;
         list-style: none;
         padding-left: 0;
@@ -69,40 +92,16 @@
         margin-bottom: 0;   
         width: 100%;
     }
-
-    .menu-link.m-list {
-        display: block;
-        line-height: 2.875em;
-        padding-left: 0.9375em;
-        border-top: 1px solid $nav-item-border-top-color;
-        border-bottom: 1px solid $nav-item-border-bottom-color;
-    }
-
-
-
-    .menu-link.m-last {
-        line-height: 3em;
-        border-bottom: none;
-    }
-
-    .menu-link:active, .menu-link:hover, .menu-link:visited, .menu-link:focus {
-        color: $nav-font-color;
-        text-decoration: none;
-    }
-
-    .menu-link:hover {
-        background-color: $nav-item-bg-hover-color;
-    }
 }
 
 // MEDIA QUERIES
 
 // LG
 @media (min-width: 992px) {
-    @import "navigation_lg"
+    @import "navigation_lg";
 }
 
 // XL
 @media (min-width: 1200px) {
-    @import "navigation_xl"
+    @import "navigation_xl";
 }

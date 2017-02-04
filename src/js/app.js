@@ -18,7 +18,7 @@ window.onload = function () {
         } else {
             hideToggleBlock();
         }
-    };
+    }
 
     function showToggleBlock() {
         $toggleBlock.css("display", "block");
@@ -30,4 +30,4 @@ window.onload = function () {
         isToggleBlockShown = false;
     }
 
-}
+};

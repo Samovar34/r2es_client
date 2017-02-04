@@ -29,7 +29,7 @@ $nav-item-border-top-color: #546e7a;
 $nav-item-border-bottom-color: #263238;
 $nav-item-bg-hover-color: #455A64;
 
-$nav-toggle-shadow-color: #757575;
+$nav-toggle-shadow-color: $nav-shadow-color;
 
 // sidebar-link-block
 $slb__link_background-color-hover: rgba(255, 255, 255, .1);

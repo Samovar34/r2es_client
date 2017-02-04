@@ -1,0 +1,10 @@
+.nav-layout {
+  background-color: $nav-bg-color;
+  position: relative;
+  font-size: 1em;
+}
+
+// LG
+@media (min-width: 992px) {
+  box-shadow: 0 2px 3px $nav-shadow-color;
+}
