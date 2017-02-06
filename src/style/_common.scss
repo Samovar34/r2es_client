@@ -2,3 +2,14 @@
     @include make-row();
     margin-bottom: 10px;
 }
+
+.fluid-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.date-text {
+    font-size: .8em;
+    font-style: italic;
+    color:$info-font-color;
+}
