@@ -3,12 +3,10 @@
 }
 
 .page-col-main {
-    @include make-col-ready();
     @include make-col(12);
 }
 
 .page-col-aside { 
-    @include make-col-ready();
     @include make-col(12);
 }
 

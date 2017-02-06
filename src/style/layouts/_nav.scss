@@ -1,7 +1,11 @@
 .nav-layout {
   background-color: $nav-bg-color;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   font-size: 1em;
+  z-index: 1000;
 }
 
 // LG

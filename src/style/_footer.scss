@@ -1,9 +1,16 @@
 .footer {
     color: #78909C;
     margin-bottom: 20px;
+    padding-top: 15px;
 
 }
 
 .footer__body {
     text-align: center;
+}
+
+@media (min-width: 762px) {
+    .footer {
+        padding-top: 10px;
+    }
 }

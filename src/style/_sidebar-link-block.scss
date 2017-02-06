@@ -6,35 +6,36 @@
     margin-bottom: 0.625em;
     border: 1px solid $slb_border-color;
 
+    // ELEMENTs
+    &__link {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+
+        &:hover {
+            background-color: $slb__link_background-color-hover;
+        }
+
+        span {
+            position: absolute;
+            top: -999em;
+        }
+    }
+
+    &__header {
+        color: $b-header-font-color;
+        padding: 0.3125em;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+    }
+
     // MODs
     &.sidebar-link-block--last {
         margin-bottom: 0;
     }
-}
-
-.sidebar-link-block__link {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    bottom: 0;
-
-    &:hover {
-        background-color: $slb__link_background-color-hover;
-    }
-
-    span {
-        position: absolute;
-        top: -999em;
-    }
-}
-
-.sidebar-link-block__header {
-    color: $b-header-font-color;
-    padding: 0.3125em;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin: 0;
 }
