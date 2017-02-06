@@ -53,6 +53,7 @@
     // SIMPLE NAVIGATION LINKS
     &__link {
         color: $nav-font-color;
+        font-size: 1rem;
 
         &:active, &:hover, &:visited, &:focus {
             color: $nav-font-color;
@@ -64,6 +65,10 @@
         }
 
         // MODs
+        &--active {
+            //TODO добавить переменную
+            background-color: $nav-item-border-bottom-color;
+        }
         &--li {
             display: block;
             line-height: 2.875em;
@@ -85,7 +90,7 @@
 
     // NAVIGATION LIST
     &__list {
-        font-size: 1em;
+        font-size: 0;
         list-style: none;
         padding-left: 0;
         margin-left: 0;
