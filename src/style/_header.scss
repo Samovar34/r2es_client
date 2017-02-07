@@ -7,13 +7,22 @@
     padding-top: 2em;
     padding-bottom: 2em;
 
-    h1 {
+    &__link {
         color: $h-font-color;
-        text-align: center;
-        margin-bottom: 0;
 
         span {
             color: $h-alt-font-color;
         }
+
+        &:hover, &:visited, &:active, &:focus {
+            color: $h-font-color;
+            text-decoration: none;
+        }
+    }
+
+    h1 {
+        color: $h-font-color;
+        text-align: center;
+        margin-bottom: 0;
     }
 }
