@@ -2,6 +2,7 @@ const gulp = require("gulp"),
       scss = require("gulp-sass"),
       del  = require("del"),
       include = require("gulp-file-include"),
+      htmlmin = require("gulp-htmlmin"),
       browserSync = require("browser-sync").create();
 
 let path = {
@@ -43,6 +44,7 @@ gulp.task("build:html", () => {
         .pipe(include({
             prefix: "@@"
         }))
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(path.build.html));
 });
 
