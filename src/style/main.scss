@@ -7,6 +7,9 @@ $enable-grid-classes: false;
 // variables
 @import "variables";
 
+// common
+@import "common";
+
 // layouts
 @import "./layouts/common";
 @import "./layouts/page";
@@ -23,8 +26,6 @@ $enable-grid-classes: false;
 @import "sidebar";
 @import "sidebar-item";
 @import "sidebar-link-block";
-
-@import "common";
 
 
 body {
