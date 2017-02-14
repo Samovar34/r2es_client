@@ -13,10 +13,12 @@
 @media (min-width: 762px) {
     .page-col-main {
         @include make-col(7);
+        padding-right: 5px;
     }
 
     .page-col-aside {
         @include make-col(5);
+        padding-left: 5px;
     }
     
 }

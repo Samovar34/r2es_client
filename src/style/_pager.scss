@@ -1,0 +1,39 @@
+.pager {
+    padding: 10px 0;
+    font-size: 2rem;
+
+    &__control {
+
+        &--left {
+            float: left;
+        }
+
+        &--right {
+            float: right
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 0 1rem;
+        color: #212121;
+        
+
+        &:hover {
+            background-color: #212121;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        &:active,
+        &:visited,
+        &:focus {
+            color: #212121;
+            text-decoration: none;
+        }
+    }
+
+    &__page {
+        text-align: center;
+    }
+}

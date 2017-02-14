@@ -27,6 +27,8 @@ $enable-grid-classes: false;
 @import "s-block";
 @import "l-block";
 
+@import "pager";
+
 
 body {
     background-color: $page-bg-color;
