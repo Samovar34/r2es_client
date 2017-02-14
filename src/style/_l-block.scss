@@ -1,4 +1,6 @@
-.sidebar-link-block {
+// link-block
+// обычно применяются в сайдбаре, кликабельны
+.l-block {
     font-size: 1em;
     position: relative;
     height: 7em;
@@ -35,7 +37,7 @@
     }
 
     // MODs
-    &.sidebar-link-block--last {
+    &--last {
         margin-bottom: 0;
     }
 }

@@ -1,13 +1,13 @@
-.layout-row {
+.row {
     @include make-row();
 }
 
-.layout-col {
+.col {
     @include make-col-ready();
     width: 100%;
 }
 
-.layout-base {
+.container {
     font-size: 1em;
     max-width: 1140px;
     @include make-container();

@@ -1,0 +1,63 @@
+// small block
+// обычно используется как контейнер в сайдбаре
+
+// <div...
+.s-block {
+    background-color: $sitem_background-color;
+    box-shadow: $sitem_box-shadow;
+    font-size: 1em;
+    margin-bottom: 0.625em;
+    position: relative;
+
+    // ELEMENTs
+
+    // <a...
+    &__link {
+        color: #212121;
+
+        &:hover,
+        &:active,
+        &:visited {
+            color: #212121;
+            text-decoration: underline;
+        }
+    }
+
+    // <div...
+    &__header {
+        border-bottom: 1px solid $sitem__header_border-bottom-color;
+        margin-bottom: 0.5em;
+
+        h3 {
+            margin: 0;
+            padding: 0.3125em 0.625em;
+        }
+    }
+
+    // <div...
+    &__body {
+        padding: 0 0.625em 0.625em;
+
+        // MODs
+
+        // Если тело блока применяется без header
+        &--alone {
+            padding-top: 0.625em;
+        }
+    }
+
+    // <p...
+    &__p {
+
+        //MODs
+        &--last {
+            margin-bottom: 0;
+        }
+    }
+    
+
+    // MODs
+    &--last {
+        margin-bottom: 0;
+    }
+}
