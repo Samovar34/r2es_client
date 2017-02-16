@@ -5,6 +5,7 @@
 .col {
     @include make-col-ready();
     width: 100%;
+    padding: 0;
 }
 
 .container {

@@ -11,7 +11,22 @@
   <body>
     @@include("./block/nav.html")
     @@include("./block/header.html")
-    @@include("./block/blog/content.html")
+    <div class="page-layout container">
+    <div class="row">
+        <div class="col page-col-main">
+            @@include("./block/posts/180217.html")
+        </div>
+        <div class="col page-col-aside">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            @@include("./block/footer.html")
+        </div>
+    </div>
+    
+</div>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
