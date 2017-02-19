@@ -3,6 +3,7 @@ const gulp = require("gulp"),
       del  = require("del"),
       include = require("gulp-file-include"),
       htmlmin = require("gulp-htmlmin"),
+      pug = require("gulp-pug"),
       browserSync = require("browser-sync").create();
 
 let path = {
@@ -11,7 +12,8 @@ let path = {
         style: "build/style/",
         js: "build/js/",
         img: "build/img/",
-        fonts: "build/fonts/"
+        fonts: "build/fonts/",
+        views: "build/pug/"
     },
 
     watch: {
@@ -19,7 +21,8 @@ let path = {
         style: "src/style/**/*.scss",
         js: "src/js/**/*.js",
         img: "src/img/**/*.*",
-        fonts: "src/fonts/**/*.*"
+        fonts: "src/fonts/**/*.*",
+        views: "src/views/**/*.pug"
     },
 
     src: {
@@ -27,7 +30,8 @@ let path = {
         style: "src/style/*.scss",
         js: "src/js/**/*.js",
         img: "src/img/*.*",
-        fonts: "src/fonts/**/*.*"
+        fonts: "src/fonts/**/*.*",
+        views: "src/views/*.pug"
     },
 
     del: "build/**/*"
@@ -46,6 +50,13 @@ gulp.task("build:html", () => {
         }))
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(path.build.html));
+});
+
+// build views 
+gulp.task('build:views', () => {
+  return gulp.src(path.src.views)
+    .pipe(pug())
+    .pipe(gulp.dest(path.build.views));
 });
 
 // build style
@@ -83,6 +94,7 @@ gulp.task("build:fonts", ()=> {
 
 gulp.task("build", () => {
     gulp.start("build:html");
+    gulp.start("build:views");
     gulp.start("build:style");
     gulp.start("build:js");
     gulp.start("build:img");
@@ -116,6 +128,9 @@ gulp.task("watch:fonts", ["build:fonts"], (done) => {
     done();    
 });
 
+gulp.task("watch:views", ["build:views"], (done) => {
+    done();    
+});
 
 // ***** SPECIAL *****
 
@@ -143,10 +158,10 @@ gulp.task("serve", (done) => {
     gulp.watch(path.watch.js, ["watch:js"]);
     gulp.watch(path.watch.img, ["watch:img"]);
     gulp.watch(path.watch.fonts, ["watch:fonts"]);
+    gulp.watch(path.watch.views, ["watch:views"]);
 
     done();
 });
-
 
 // ***** DEFAULT *****
 

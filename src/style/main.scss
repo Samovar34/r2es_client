@@ -17,7 +17,7 @@ $enable-grid-classes: false;
 @import "./layouts/nav";
 
 // blocks
-@import "navigation";
+@import "navigation/navigation";
 @import "header";
 @import "sidebar";
 @import "footer";
@@ -31,6 +31,6 @@ $enable-grid-classes: false;
 
 
 body {
-    background-color: $page-bg-color;
+    background: $page-bg-color $page-bg;
     color: $main-font-color;
 }
