@@ -2,22 +2,19 @@ const gulp = require("gulp"),
       scss = require("gulp-sass"),
       del  = require("del"),
       include = require("gulp-file-include"),
-      htmlmin = require("gulp-htmlmin"),
       pug = require("gulp-pug"),
       browserSync = require("browser-sync").create();
 
 let path = {
     build: {
-        html: "build/",
         style: "build/style/",
         js: "build/js/",
         img: "build/img/",
         fonts: "build/fonts/",
-        views: "build/pug/"
+        views: "build/"
     },
 
     watch: {
-        html: "src/**/*.html",
         style: "src/style/**/*.scss",
         js: "src/js/**/*.js",
         img: "src/img/**/*.*",
@@ -26,7 +23,6 @@ let path = {
     },
 
     src: {
-        html: "src/*.html",
         style: "src/style/*.scss",
         js: "src/js/**/*.js",
         img: "src/img/*.*",
@@ -40,17 +36,6 @@ let path = {
 // TASKS
 
 // ***** BUILD *****
-
-// build html
-gulp.task("build:html", () => {
-    gulp.src(path.src.html)
-        // включить файлы в главный файл
-        .pipe(include({
-            prefix: "@@"
-        }))
-        .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest(path.build.html));
-});
 
 // build views 
 gulp.task('build:views', () => {
@@ -93,7 +78,6 @@ gulp.task("build:fonts", ()=> {
 });
 
 gulp.task("build", () => {
-    gulp.start("build:html");
     gulp.start("build:views");
     gulp.start("build:style");
     gulp.start("build:js");
@@ -102,11 +86,6 @@ gulp.task("build", () => {
 });
 
 // ***** WATCH HANDLERS *****
-
-gulp.task("watch:html", ["build:html"], (done) => {
-    browserSync.reload();
-    done();
-});
 
 gulp.task("watch:style", ["build:style"], (done) => {
     browserSync.reload();
@@ -153,7 +132,6 @@ gulp.task("serve", (done) => {
     });
 
     // enable watch
-    gulp.watch(path.watch.html, ["watch:html"]);
     gulp.watch(path.watch.style, ["watch:style"]);
     gulp.watch(path.watch.js, ["watch:js"]);
     gulp.watch(path.watch.img, ["watch:img"]);

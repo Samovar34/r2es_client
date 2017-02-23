@@ -2,9 +2,9 @@
   background-color: $nav-bg-color;
   font-size: 1em;
   z-index: 1000;
-}
 
-// LG
-@media (min-width: 992px) {
-  box-shadow: 0 2px 3px $nav-shadow-color;
+  // LG
+  @media (min-width: 992px) {
+    box-shadow: 0 2px 3px $nav-shadow-color;
+  }
 }
